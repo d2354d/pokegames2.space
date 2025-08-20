@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina el Pokémon</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <img src="imgg/logo.png" alt="Logo Pokédex">
+            <style>
+        a {
+            text-decoration: none; 
+            color: rgb(172, 75, 75);
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+    </style>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="jueguillos.html" class="btn btn-header">Volver a los PokeJuegos :D</a></li>
+                <li class="nav-item"><a href="index.html" class="btn btn-header">Ir al PokéInicio :D</a></li>
+                <link rel="stylesheet" href="main.css">
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>Adivina el Pokémon</h1>
+        
+        <!-- juego: quién es ese pokemoOooOn? ;D-->
+        <div class="game-container">
+            <div id="game-pokemon-silhouette">
+                <img id="silhouette-img" src="" alt="¿Quién es este Pokémooooon?">
+            </div>
+            <div id="game-options" class="options-container"></div>
+            <div class="game-controls">
+                <button id="new-pokemon-btn">Nuevo Pokémon</button>
+                <div id="game-feedback"></div>
+                <div id="score-display">
+                    Puntuación: <span id="score">0</span> | 
+                    Intentos: <span id="attempts">0</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="jueguillo_quien_pokemon.js"></script>
+</body>
+</html>

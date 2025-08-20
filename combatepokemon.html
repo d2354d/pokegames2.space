@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina el Pokémon</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <img src="imgg/logo.png" alt="Logo Pokédex">
+            <style>
+        a {
+            text-decoration: none; 
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        
+    </style>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="jueguillos.html" class="btn btn-header">Volver a los PokeJuegos :D</a></li>
+                <li class="nav-item"><a href="index.html" class="btn btn-header">Ir al PokéInicio :D</a></li>
+                <link rel="stylesheet" href="main.css">
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="pokemon-combat">
+            <h1>Combate Pokémon</h1>
+            <p class="game-rules">Charizard > Venusaur, Venusaur > Blastoise, Blastoise > Charizard</p>
+            
+            <div class="combat-container">
+                <div class="player-selection">
+                    <h2>Jugador 1</h2>
+                    <div class="pokemon-options">
+                        <button class="pokemon-btn charizard" data-pokemon="charizard">Charizard</button>
+                        <button class="pokemon-btn venusaur" data-pokemon="venusaur">Venusaur</button>
+                        <button class="pokemon-btn blastoise" data-pokemon="blastoise">Blastoise</button>
+                    </div>
+                </div>
+                
+                <div class="vs-container">
+                    <span class="vs">VS</span>
+                </div>
+                
+                <div class="player-selection">
+                    <h2>Jugador 2 (misterio)</h2>
+                    <div class="pokemon-options">
+                        <div id="cpu-selection" class="cpu-selection">?</div>
+                    </div>
+                </div>
+            </div>
+            
+            <button id="combat-btn" class="combat-btn" disabled>¡Combate!</button>
+            
+            <div id="combat-result" class="combat-result"></div>
+            
+            <div class="combat-history">
+                <h3>Historial de Combates</h3>
+                <ul id="history-list"></ul>
+            </div>
+        </section>
+    </main>
+
+    <script src="combatepokemon.js"></script>
+</body>
+</html>
